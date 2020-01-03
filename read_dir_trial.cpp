@@ -1,3 +1,5 @@
+//////// Slightly modified from a published example: http://www.martinbroadhurst.com/list-the-files-in-a-directory-in-c.html
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -33,5 +35,6 @@ int main()
 	std::copy(v.begin(), v.end(),
 		std::ostream_iterator<std::string>(std::cout, "\n"));
 
+	//print as needed
 	std::cout << "done" << std::endl;
 }
